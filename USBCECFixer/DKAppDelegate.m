@@ -17,7 +17,23 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-	// Insert code here to initialize your application
+
+	/*
+	 
+	 The USB-CEC Adpater by Pulse Eight seems to end up in a "limbo" state
+	 if it's connected during boot on Mac OS X systems.
+	 
+	 I don't know if this is a problem with Mac OS X or the adapter, but it
+	 manifests by not being recognised as a serial port device — IOKit
+	 can't see it as an IOSerialBSDService, and it's not present in /dev.
+	 
+	 This project tries to find the device by searching for serial ports,
+	 then directly as an IOUSBDeviceClass device. If it's not found via
+	 serial port but is via USB, the device is reset, which allows it to be
+	 recognised by the system as usual.
+	 
+	 */
+
 	bool foundBySerial = findCECDeviceBySerialService();
 
 	if (!foundBySerial) {
