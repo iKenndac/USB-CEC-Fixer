@@ -16,8 +16,7 @@
 		50EFF9CC18003BC10020E741 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50EFF9CB18003BC10020E741 /* Images.xcassets */; };
 		50EFF9D318003BC10020E741 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EFF9D218003BC10020E741 /* XCTest.framework */; };
 		50EFF9D418003BC10020E741 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EFF9B318003BC10020E741 /* Cocoa.framework */; };
-		50EFF9DC18003BC10020E741 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50EFF9DA18003BC10020E741 /* InfoPlist.strings */; };
-		50EFF9DE18003BC10020E741 /* USBCECFixerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EFF9DD18003BC10020E741 /* USBCECFixerTests.m */; };
+		50EFF9E818003C110020E741 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EFF9E718003C110020E741 /* IOKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,9 +46,7 @@
 		50EFF9CB18003BC10020E741 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		50EFF9D118003BC10020E741 /* USBCECFixerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = USBCECFixerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50EFF9D218003BC10020E741 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		50EFF9D918003BC10020E741 /* USBCECFixerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "USBCECFixerTests-Info.plist"; sourceTree = "<group>"; };
-		50EFF9DB18003BC10020E741 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		50EFF9DD18003BC10020E741 /* USBCECFixerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = USBCECFixerTests.m; sourceTree = "<group>"; };
+		50EFF9E718003C110020E741 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50EFF9E818003C110020E741 /* IOKit.framework in Frameworks */,
 				50EFF9B418003BC10020E741 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,7 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				50EFF9B918003BC10020E741 /* USBCECFixer */,
-				50EFF9D718003BC10020E741 /* USBCECFixerTests */,
 				50EFF9B218003BC10020E741 /* Frameworks */,
 				50EFF9B118003BC10020E741 /* Products */,
 			);
@@ -95,6 +92,7 @@
 		50EFF9B218003BC10020E741 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				50EFF9E718003C110020E741 /* IOKit.framework */,
 				50EFF9B318003BC10020E741 /* Cocoa.framework */,
 				50EFF9D218003BC10020E741 /* XCTest.framework */,
 				50EFF9B518003BC10020E741 /* Other Frameworks */,
@@ -132,24 +130,6 @@
 				50EFF9BF18003BC10020E741 /* main.m */,
 				50EFF9C118003BC10020E741 /* USBCECFixer-Prefix.pch */,
 				50EFF9C218003BC10020E741 /* Credits.rtf */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		50EFF9D718003BC10020E741 /* USBCECFixerTests */ = {
-			isa = PBXGroup;
-			children = (
-				50EFF9DD18003BC10020E741 /* USBCECFixerTests.m */,
-				50EFF9D818003BC10020E741 /* Supporting Files */,
-			);
-			path = USBCECFixerTests;
-			sourceTree = "<group>";
-		};
-		50EFF9D818003BC10020E741 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				50EFF9D918003BC10020E741 /* USBCECFixerTests-Info.plist */,
-				50EFF9DA18003BC10020E741 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -242,7 +222,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50EFF9DC18003BC10020E741 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +241,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50EFF9DE18003BC10020E741 /* USBCECFixerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,14 +277,6 @@
 				50EFF9C918003BC10020E741 /* Base */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		50EFF9DA18003BC10020E741 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				50EFF9DB18003BC10020E741 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -388,7 +358,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "USBCECFixer/USBCECFixer-Prefix.pch";
 				INFOPLIST_FILE = "USBCECFixer/USBCECFixer-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.8;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -401,7 +373,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "USBCECFixer/USBCECFixer-Prefix.pch";
 				INFOPLIST_FILE = "USBCECFixer/USBCECFixer-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.8;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -465,6 +439,7 @@
 				50EFF9E318003BC10020E741 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50EFF9E418003BC10020E741 /* Build configuration list for PBXNativeTarget "USBCECFixerTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +448,7 @@
 				50EFF9E618003BC10020E741 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
