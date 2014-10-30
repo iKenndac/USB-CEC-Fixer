@@ -14,20 +14,8 @@
 		50EFF9C718003BC10020E741 /* DKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EFF9C618003BC10020E741 /* DKAppDelegate.m */; };
 		50EFF9CA18003BC10020E741 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50EFF9C818003BC10020E741 /* MainMenu.xib */; };
 		50EFF9CC18003BC10020E741 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50EFF9CB18003BC10020E741 /* Images.xcassets */; };
-		50EFF9D318003BC10020E741 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EFF9D218003BC10020E741 /* XCTest.framework */; };
-		50EFF9D418003BC10020E741 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EFF9B318003BC10020E741 /* Cocoa.framework */; };
 		50EFF9E818003C110020E741 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EFF9E718003C110020E741 /* IOKit.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		50EFF9D518003BC10020E741 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 50EFF9A818003BC10020E741 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 50EFF9AF18003BC10020E741;
-			remoteInfo = USBCECFixer;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		50EFF9B018003BC10020E741 /* USBCECFixer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = USBCECFixer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,7 +32,6 @@
 		50EFF9C618003BC10020E741 /* DKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKAppDelegate.m; sourceTree = "<group>"; };
 		50EFF9C918003BC10020E741 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		50EFF9CB18003BC10020E741 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		50EFF9D118003BC10020E741 /* USBCECFixerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = USBCECFixerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50EFF9D218003BC10020E741 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		50EFF9E718003C110020E741 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -56,15 +43,6 @@
 			files = (
 				50EFF9E818003C110020E741 /* IOKit.framework in Frameworks */,
 				50EFF9B418003BC10020E741 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		50EFF9CE18003BC10020E741 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				50EFF9D418003BC10020E741 /* Cocoa.framework in Frameworks */,
-				50EFF9D318003BC10020E741 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				50EFF9B018003BC10020E741 /* USBCECFixer.app */,
-				50EFF9D118003BC10020E741 /* USBCECFixerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,24 +131,6 @@
 			productReference = 50EFF9B018003BC10020E741 /* USBCECFixer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		50EFF9D018003BC10020E741 /* USBCECFixerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 50EFF9E418003BC10020E741 /* Build configuration list for PBXNativeTarget "USBCECFixerTests" */;
-			buildPhases = (
-				50EFF9CD18003BC10020E741 /* Sources */,
-				50EFF9CE18003BC10020E741 /* Frameworks */,
-				50EFF9CF18003BC10020E741 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				50EFF9D618003BC10020E741 /* PBXTargetDependency */,
-			);
-			name = USBCECFixerTests;
-			productName = USBCECFixerTests;
-			productReference = 50EFF9D118003BC10020E741 /* USBCECFixerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -179,13 +138,8 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = DK;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Daniel Kennett";
-				TargetAttributes = {
-					50EFF9D018003BC10020E741 = {
-						TestTargetID = 50EFF9AF18003BC10020E741;
-					};
-				};
 			};
 			buildConfigurationList = 50EFF9AB18003BC10020E741 /* Build configuration list for PBXProject "USBCECFixer" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -201,7 +155,6 @@
 			projectRoot = "";
 			targets = (
 				50EFF9AF18003BC10020E741 /* USBCECFixer */,
-				50EFF9D018003BC10020E741 /* USBCECFixerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -218,13 +171,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		50EFF9CF18003BC10020E741 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -237,22 +183,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		50EFF9CD18003BC10020E741 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		50EFF9D618003BC10020E741 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 50EFF9AF18003BC10020E741 /* USBCECFixer */;
-			targetProxy = 50EFF9D518003BC10020E741 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		50EFF9BC18003BC10020E741 /* InfoPlist.strings */ = {
@@ -360,7 +291,7 @@
 				INFOPLIST_FILE = "USBCECFixer/USBCECFixer-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -375,48 +306,8 @@
 				INFOPLIST_FILE = "USBCECFixer/USBCECFixer-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		50EFF9E518003BC10020E741 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/USBCECFixer.app/Contents/MacOS/USBCECFixer";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "USBCECFixer/USBCECFixer-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "USBCECFixerTests/USBCECFixerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		50EFF9E618003BC10020E741 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/USBCECFixer.app/Contents/MacOS/USBCECFixer";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "USBCECFixer/USBCECFixer-Prefix.pch";
-				INFOPLIST_FILE = "USBCECFixerTests/USBCECFixerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -437,15 +328,6 @@
 			buildConfigurations = (
 				50EFF9E218003BC10020E741 /* Debug */,
 				50EFF9E318003BC10020E741 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		50EFF9E418003BC10020E741 /* Build configuration list for PBXNativeTarget "USBCECFixerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				50EFF9E518003BC10020E741 /* Debug */,
-				50EFF9E618003BC10020E741 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
